@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mera Portfolio</title>
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #1abc9c;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+
+        /* Form Inputs ki Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mera Portfolio</h1>
+        <p>Aspiring Web Developer</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Interactive Contact Form -->
+        <div class="card">
+            <h2>Mujhse Raabta Karein (Contact Form)</h2>
+            <p>Apni details bharein, submit button dabate hi yeh message mujhe mil jayega:</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
+                
+                <!-- Web3Forms Access Key yahan daalein -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                <label>Aapka Naam:</label>
+                <input type="text" name="name" placeholder="Apna naam likhein" required>
+
+                <label>Aapka Email:</label>
+                <input type="email" name="email" placeholder="Apna email likhein" required>
+
+                <label>Aapka Message:</label>
+                <textarea name="message" rows="4" placeholder="Apna paigaam likhein..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mera Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
